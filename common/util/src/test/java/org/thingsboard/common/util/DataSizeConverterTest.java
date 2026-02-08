@@ -45,10 +45,10 @@ public class DataSizeConverterTest {
         Assertions.assertEquals("1.50 KB", DataSizeConverter.formatBytes(1536));
     }
 
-    // @Test
-    // public void testFormatBytes_megabytes() {
-    //     Assertions.assertEquals("1.00 MB", DataSizeConverter.formatBytes(1024 * 1024));
-    // }
+    @Test
+    public void testFormatBytes_megabytes() {
+        Assertions.assertEquals("1.00 MB", DataSizeConverter.formatBytes(1024 * 1024));
+    }
 
     // @Test
     // public void testFormatBytes_gigabytes() {

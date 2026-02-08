@@ -5,7 +5,6 @@ on:
     branches: [ master, tests_question3 ]
   pull_request:
     branches: [ master, tests_question3 ]
-
 jobs:
   build-and-test:
     runs-on: ubuntu-22.04
@@ -25,7 +24,7 @@ jobs:
       run: mvn clean compile -DskipTests -T 1C
     
     - name: Run unit tests
-      run: mvn test -T 1C -pl common -am
+      run: mvn test -T 1C -pl common,dao, rule-engine -am
     
     - name: Package application
       run: mvn package -DskipTests -T 1C -pl application -am
