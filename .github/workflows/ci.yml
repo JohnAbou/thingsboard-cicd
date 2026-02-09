@@ -26,3 +26,6 @@ jobs:
     
     - name: Run unit tests
       run: mvn test -T 1C -pl common/util,common/data
+    
+    - name: Run integration tests
+      run: mvn test -T 1C -pl common/util -Dtest=*IntegrationTest
