@@ -54,6 +54,4 @@ public class DataSizeConverterTest {
     public void testFormatBytes_gigabytes() {
         Assertions.assertEquals("1.00 GB", DataSizeConverter.formatBytes(1024L * 1024 * 1024));
     }
-
-    
 }
