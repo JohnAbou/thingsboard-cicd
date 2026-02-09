@@ -28,4 +28,4 @@ jobs:
       run: mvn test -T 1C -pl common/util,common/data
     
     - name: Run integration tests
-      run: mvn test -T 1C -pl common/util -am -Dtest=*IntegrationTest
+      run: mvn test -T 1C -pl common/util -am -Dtest=*IntegrationTest -Dsurefire.failIfNoSpecifiedTests=false
